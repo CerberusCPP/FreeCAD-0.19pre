@@ -167,7 +167,7 @@ void StdCmdOpen::activated(int iMsg)
 //===========================================================================
 // Std_Import
 //===========================================================================
-
+/*
 DEF_STD_CMD_A(StdCmdImport)
 
 StdCmdImport::StdCmdImport()
@@ -367,7 +367,7 @@ bool StdCmdMergeProjects::isActive(void)
 {
     return this->hasActiveDocument();
 }
-
+*/
 //===========================================================================
 // Std_ExportGraphviz
 //===========================================================================
@@ -1742,9 +1742,9 @@ void CreateDocCommands(void)
 
     rcCmdMgr.addCommand(new StdCmdNew());
     rcCmdMgr.addCommand(new StdCmdOpen());
-    rcCmdMgr.addCommand(new StdCmdImport());
-    rcCmdMgr.addCommand(new StdCmdExport());
-    rcCmdMgr.addCommand(new StdCmdMergeProjects());
+    //rcCmdMgr.addCommand(new StdCmdImport());
+    //rcCmdMgr.addCommand(new StdCmdExport());
+    //rcCmdMgr.addCommand(new StdCmdMergeProjects());
     rcCmdMgr.addCommand(new StdCmdExportGraphviz());
 
     rcCmdMgr.addCommand(new StdCmdSave());
